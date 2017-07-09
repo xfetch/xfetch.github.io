@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>xfetch</title>
+  </head>
+  <body>Don't close this window, Some application is using it</body>
+  <script>
+    function close(){!window.opener && open(location, '_self').close()}
+    setInterval(close, 1000)
+    close()
+  </script>
+</html>
